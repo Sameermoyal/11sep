@@ -1,0 +1,31 @@
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+class Example
+{
+    private:
+       
+    public:
+        int x;
+        float y;
+        string s;
+        Example(int num,float weight,string name)
+        {
+            x=num;
+            y=weight;
+            s=name;
+            cout<<"object initilaised"<<"\n";
+        }
+        ~Example(){
+            cout<<"Object deallocated";
+        };
+     
+};
+
+int main(){
+
+    Example obj1(10,10.25,"prajjal");
+    cout<<"Before swap obj1>>>>> "<<obj1.x<<" "<<obj1.y<<" "<<obj1.s<<"\n";
+    //cout<<"Before swap obj1>>>>> "<<obj1.x<<" "<<obj1.y<<" "<<obj1.s<<"\n";
+    return 0;
+}
